@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-familY: 'Roboto', sans-serif;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  margin: 0%;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #4A45E6, #030061);
+  position: relative;
+}
+
+.principal {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 90px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 1000px;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.text {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-size:70px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.principal img {
+  border: 2px solid #333;
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.principal p {
+  margin: 0px;
+}
+
+.container-inferior {
+  background: white;
+  padding: 5px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.buttons {
+  position: fixed;
+  top: 22%;
+  right: 23%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.change-content-button {
+  border-radius: 4px;
+  margin-bottom: 0px;
+  width: 100px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+
+  .principal {
+    width: 90%;
+    padding: 10px;
+  }
+}
